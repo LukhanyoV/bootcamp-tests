@@ -6,7 +6,7 @@ describe('My isWeekday function', () => {
     });
 
     it('should retuurn false if given day is not a weekday', () => {
-        let results = isWeekday("January");
+        let results = isWeekday("Saturday");
         let expected = false;
         assert.equal(results, expected);
     });

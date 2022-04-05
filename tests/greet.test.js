@@ -1,20 +1,14 @@
 // Testting my greet function
 describe('My greet function' , function(){
-    it('should return Hello, Lukhanyo' , function(){
+    it('should return \"Hello, Lukhanyo\" if given input is \"Lukhanyo\" a string' , function(){
         let results = greet("Lukhanyo");
         let expected = "Hello, Lukhanyo"
         assert.equal(results, expected);
     });
 
-    it('should return Hello, World' , function(){
-        let results = greet("World");
-        let expected = "Hello, World"
-        assert.equal(results, expected);
-    });
-
-    it('should return Hello, undefined', function(){
+    it('should return \'Invalid input\' when given an input that is not a string', function(){
         let results = greet();
-        let expected = "Hello, undefined";
+        let expected = "Invalid input";
         assert.equal(results, expected);
     });
 });
